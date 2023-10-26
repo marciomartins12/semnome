@@ -6,15 +6,21 @@ import { useSelector, useDispatch } from 'react-redux'
 
 function App() {
   const dispatch = useDispatch();
-  const { teste, testesepodemaisdeum } = useSelector(state => state.usuarioReducer);
-  console.log(teste, testesepodemaisdeum);
+  const { nome, sobrenome } = useSelector(state => state.usuarioReducer);
+  console.log(nome, sobrenome);
   
   const handclickbotao = () => {
     dispatch({
       type: "teste/testinho",
+      nome : "Márcio",
+      sobrenome: "Câmara", 
     })
-    console.log(teste, testesepodemaisdeum);
-
+    console.log(nome, sobrenome );
+  }
+  const handRemove = ()=>{
+    dispatch({
+      type: "remove/tudo",
+    })
   }
   return (
     <>
@@ -27,8 +33,10 @@ function App() {
         </a>
       </div>
       <h1>Teste</h1>
-      <h3>{testesepodemaisdeum}</h3>
+      <h3>nome? = {nome}</h3>
+      <h4>sobrenome? = {sobrenome}</h4>
       <button onClick={handclickbotao}> clickme</button>
+      <button onClick={handRemove}> remove</button>
 
     </>
   )
