@@ -3,10 +3,10 @@ const initialState={
 };
 const usuarioReducer = (state = initialState, action)=>{
     if(action.type==="teste/testinho"){
-        return{...state, nome: action.nome, sobrenome: action.sobrenome}
+        return{...state, nome: action.payload}
     }
     if(action.type == "remove/tudo"){
-        return{...state, nome: null, sobrenome: null}
+        return{...state, nome: null}
     }
 
     return state;

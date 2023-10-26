@@ -9,15 +9,17 @@ function App() {
   const { nome, sobrenome } = useSelector(state => state.usuarioReducer);
   console.log(nome, sobrenome);
   
-  const handclickbotao = () => {
+
+
+  const clickbtn = () => {
     dispatch({
       type: "teste/testinho",
-      nome : "Márcio",
-      sobrenome: "Câmara", 
+      payload : "aaaaaaaaaa", 
     })
-    console.log(nome, sobrenome );
   }
-  const handRemove = ()=>{
+
+
+  const Remove = ()=>{
     dispatch({
       type: "remove/tudo",
     })
@@ -35,8 +37,8 @@ function App() {
       <h1>Teste</h1>
       <h3>nome? = {nome}</h3>
       <h4>sobrenome? = {sobrenome}</h4>
-      <button onClick={handclickbotao}> clickme</button>
-      <button onClick={handRemove}> remove</button>
+      <button onClick={clickbtn}> clickme</button>
+      <button onClick={Remove}> remove</button>
 
     </>
   )
