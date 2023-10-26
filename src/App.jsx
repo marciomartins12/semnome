@@ -6,8 +6,8 @@ import { useSelector } from 'react-redux'
 
 function App() {
   const [count, setCount] = useState(0)
-  const {teste} = useSelector(state=>state.usuarioReducer);
-  console.log(teste)
+  const {teste, testesepodemaisdeum} = useSelector(state=>state.usuarioReducer);
+  console.log(teste,  testesepodemaisdeum)
   return (
     <>
       <div>
