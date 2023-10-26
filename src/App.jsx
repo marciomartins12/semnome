@@ -6,8 +6,7 @@ import { useSelector } from 'react-redux'
 
 function App() {
   const [count, setCount] = useState(0)
-  const {teste} = useSelector(rootReducers => rootReducers.userReducer);
-  console.log(teste)
+
   return (
     <>
       <div>
