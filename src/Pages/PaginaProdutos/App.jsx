@@ -1,14 +1,15 @@
 import { useSelector } from 'react-redux';
-import './App.css'
-import Produtos from './Components/Produtos'
+import Produtos from '../../Components/Produtos';
+import Style from "./PaginaInicialProdutos.module.css";
 
 function App() {
     const {Items} = useSelector(state => state.Products);
 
  return(
     <main>
-        <h1>Estação<span>Suplemento</span></h1>
-        <ul>
+        <h1 className={Style.NomedaLoja}>Estação<span>Suplemento</span></h1>
+
+        <ul className={Style.listaDeProdutos}>
             {Items.map((item)=>{
                     return <Produtos
                     key={item.id}
@@ -24,6 +25,7 @@ function App() {
                     }) 
             }
         </ul>
+        <button>Carrinho de Compras</button>
        </main>
   )
 }

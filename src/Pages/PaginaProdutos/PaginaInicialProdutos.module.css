@@ -1,0 +1,14 @@
+.listaDeProdutos{
+ display: flex;
+ flex-wrap: wrap;
+ text-align: center;
+ align-items: center;
+
+}
+.NomedaLoja{
+    text-align: center;
+
+}
+.NomedaLoja span{
+    color: green;
+}
