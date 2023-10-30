@@ -1,4 +1,5 @@
-const InitialState = [{
+import { v4 as uuidv4 } from 'uuid';
+const initialState = {
     produtos: [{
         nome: "Carnívoro Isolate",
         subtitulo: "Beef protein isolate",
@@ -159,10 +160,12 @@ const InitialState = [{
         confirmacao: false,
         classe: "%20Pasta%20de%20Amendoim%20sabor%20avelã%20"
       },]
-}]
+}
 
-export default Products = (state = InitialState, action)=>{
-    if (action.type == "produto/modify"){
+const Products = (state=initialState, action)=>{
+    if (action.type === "produto/modify"){
         return {...state, produtos : "gg"}
     }
+    return state;
 }
+export default Products;
