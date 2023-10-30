@@ -1,3 +1,4 @@
+import { useSelector } from 'react-redux';
 import './App.css'
 import Produtos from './Components/Produtos'
 
@@ -7,19 +8,23 @@ function App() {
  return(
     <main>
         <h1>Estação<span>Suplemento</span></h1>
-        {Items.map((item)=>{
-            return <Produtos
-                nome = {item.nome}
-                subtitulo = {item.subtitulo}
-                preco = {item.preco}
-                descricao = {item.descricao}
-                imagem = {item.img}
-                id = {item.id}
-                validador = {item.confirmacao}
-                classe = {item.classe}
-            />
-        })
-    }    </main>
+        <ul>
+            {Items.map((item)=>{
+                    return <Produtos
+                    key={item.id}
+                    nome = {item.nome}
+                    subtitulo = {item.subtitulo}
+                    preco = {item.preco}
+                    descricao = {item.descricao}
+                    imagem = {item.img}
+                    validador = {item.confirmacao}
+                    classe = {item.classe}
+                    id = {item.id}
+                    />
+                    }) 
+            }
+        </ul>
+       </main>
   )
 }
 

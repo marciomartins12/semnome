@@ -1,6 +1,6 @@
 import { v4 as uuidv4 } from 'uuid';
 const initialState = {
-    produtos: [{
+    Items: [{
         nome: "Carnívoro Isolate",
         subtitulo: "Beef protein isolate",
         preco: 170.00,
