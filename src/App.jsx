@@ -6,8 +6,8 @@ import { useSelector, useDispatch } from 'react-redux'
 
 function App() {
   const dispatch = useDispatch();
-  const { nome, sobrenome } = useSelector(state => state.usuarioReducer);
-  console.log(nome, sobrenome);
+  const { nome, contador } = useSelector(state => state.usuarioReducer);
+  console.log(nome, contador);
   
 
 
@@ -24,6 +24,13 @@ function App() {
       type: "remove/tudo",
     })
   }
+
+  function Limparbtn(){
+    dispatch({
+      type: "limpar/li",
+    })
+    console.log("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa")
+  }
   return (
     <>
       <div>
@@ -34,11 +41,12 @@ function App() {
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
       </div>
+      <button onClick={Limparbtn}>limpar</button>
       <h1>Teste</h1>
       <h3>nome? = {nome}</h3>
-      <h4>sobrenome? = {sobrenome}</h4>
+      <h4>sobrenome? = {contador}</h4>
       <button onClick={clickbtn}> clickme</button>
-      <button onClick={Remove}> remove</button>
+      <button onClick={Remove}> conter</button>
 
     </>
   )
