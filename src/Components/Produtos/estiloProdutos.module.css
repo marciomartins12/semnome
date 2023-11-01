@@ -2,6 +2,11 @@
     height: 280px;
     flex: 1;
     position: relative;
+    border-radius: .45em;
+    box-shadow: rgb(24, 77, 20) 0px 7px 29px 0px;
+}
+.item img{
+    margin-top: 1em;
 }
 .item h3{
     font-size: 1.25em;

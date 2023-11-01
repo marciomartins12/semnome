@@ -1,16 +1,20 @@
 import { useSelector } from 'react-redux';
 import Produtos from '../../Components/Produtos';
+import {GiHamburgerMenu} from "react-icons/gi";
 import Style from "./PaginaInicialProdutos.module.css";
-import Carousel from '../../Components/Carousel';
 
 function App() {
     const {Items} = useSelector(state => state.Products);
 
  return(
     <main>
-        <h1 className={Style.NomedaLoja}>Estação<span>Suplemento</span></h1>
 
-        <Carousel/>
+        <header className={Style.cabecalho}>
+            <GiHamburgerMenu size={20}/>
+            <h1 className={Style.NomedaLoja}>Estação<span>Suplemento</span></h1>
+        </header>
+
+
 
         <ul className={Style.listaDeProdutos}>
             {Items.map((item)=>{
