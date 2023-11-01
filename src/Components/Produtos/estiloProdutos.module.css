@@ -1,7 +1,6 @@
 .item{
     height: 280px;
     flex: 1;
-    border: 1px solid white;
     position: relative;
 }
 .item h3{
@@ -9,6 +8,7 @@
 }
 .item h4{
     font-size: .65em;
+    color: green;
 }
 .iconAbrir{
     position: absolute;
