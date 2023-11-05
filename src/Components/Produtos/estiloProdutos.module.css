@@ -18,8 +18,10 @@
 }
 .iconAbrir{
     position: absolute;
-    top: 0px;
-    left: 0px;
+    top: 8px;
+    left: 5px;
+    font-size: 1.2em;
+    color: rgb(159, 182, 154);
 }
 .precoBotoes span{
     background-color: yellow;

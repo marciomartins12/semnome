@@ -4,14 +4,19 @@
  text-align: center;
  align-items: center;
  justify-content: center;
+ margin-top: 4.85em;
 
 }
 .cabecalho{
+    position: fixed;
+    z-index: 9999999;
+    background-color: black;
+    padding: 1em 2em 1em 1em;
+    top: 0;
+    left: 0;
     display: flex;
-    justify-content: space-around;
+    gap: 2em;
     align-items: center;
-    margin-top: .50em;
-    margin-bottom: 1em;
 }
 .NomedaLoja{
     text-align: center;
