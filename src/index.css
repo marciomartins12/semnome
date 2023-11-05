@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Grand+Hotel&display=swap');
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -24,6 +26,8 @@ footer, header, hgroup, menu, nav, section {
     display: block;
 }
 body {
+    font-family: 'Bree Serif', serif;
+    font-weight: 400;
     background-color: #000;
     color: white;
     line-height: 1;
