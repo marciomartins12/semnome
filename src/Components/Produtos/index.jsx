@@ -8,11 +8,14 @@ const Produtos = ({nome, subtitulo, preco, descricao, imagem, validador, classe,
     <img src={imagem} alt={`foto do ${nome}`} />
     <h3>{nome}</h3>
     <h4>{subtitulo}</h4>
-    <div>
-        <span>{preco}</span>
+    <div className={Style.precoBotoes}>
+        <span>R${preco}</span>
+        <div className={Style.btnContador}>
+
         <button>-</button>
         {contador}
         <button>+</button>
+        </div>
     </div>
 </li>
 
