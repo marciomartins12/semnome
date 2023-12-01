@@ -4,7 +4,7 @@ constructor(nomePessoa, idade, email){
     this.idade = idade;
     this.email = email;
 }
-mensagemDeOla(){
+mensagem(){
     console.log(`nome : ${this.nome}`);
     console.log(`idade : ${this.idade}`);
     console.log(`email : ${this.email}`);
