@@ -10,4 +10,4 @@ for(let atual = 0; atual< lista.length; atual++){
       
     }
 }
-console.log(maisbarato);
+console.log(lista[maisbarato]);
