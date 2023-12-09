@@ -3,9 +3,9 @@ const listaNaoOrdenada = [ 100,0 , 5 , 6 ,4 ,2 ,1, 1 , 4, ,0.1, 100, 99, 40, 20,
 console.log(`lista : ${listaNaoOrdenada}`);
 for (let x = 0; x < listaNaoOrdenada.length; x++){
     
-    for(let j = 0; j < listaNaoOrdenada.length; j++){
+    for(let j = x+1; j < listaNaoOrdenada.length; j++){
         
-        if(listaNaoOrdenada[x] < listaNaoOrdenada[j]){
+        if(listaNaoOrdenada[x] > listaNaoOrdenada[j]){
             
             let auxiliar = listaNaoOrdenada[x];
             
