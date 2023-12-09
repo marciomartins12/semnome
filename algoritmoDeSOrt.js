@@ -5,7 +5,7 @@ for (let x = 0; x < listaNaoOrdenada.length; x++){
     
     for(let j = x+1; j < listaNaoOrdenada.length; j++){
         
-        if(listaNaoOrdenada[x] > listaNaoOrdenada[j]){
+        if(listaNaoOrdenada[x] < listaNaoOrdenada[j]){
             
             let auxiliar = listaNaoOrdenada[x];
             
