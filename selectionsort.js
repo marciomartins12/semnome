@@ -1,9 +1,26 @@
-const lista  = [1, 2, 4, 12, 1, 0, 35, 19, 3];
+const lista  = [
+    {
+        nome : "teste",
+        valor : 50
+    },
+    {
+        nome : "teste",
+        valor : 0
+    },
+    {
+        nome : "Márcio",
+        valor : -20
+    },
+    {
+        nome : "teste",
+        valor : 3
+    }
+];
 organizaLista();
 function organizaLista(){
     for(let atual = 0; atual < lista.length; atual++){
         let menorFunc = menorNumero(lista, atual);
-        if(lista[atual] > lista[menorFunc]){
+        if(lista[atual].valor > lista[menorFunc].valor){
             let aux = lista[atual];
             lista[atual] = lista[menorFunc];
             lista[menorFunc] = aux;
@@ -13,12 +30,10 @@ function organizaLista(){
 }
 
 
-
-
 function menorNumero(array, indice){
     let valorEntrada = indice;
     for(atual = indice; atual < lista.length; atual++){
-        if(array[atual] < array[valorEntrada]){
+        if(array[atual].valor < array[valorEntrada].valor){
             valorEntrada = atual ; 
         }
     }
