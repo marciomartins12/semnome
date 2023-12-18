@@ -1,14 +1,15 @@
-const lista1 = [{
+const lista1 = [
+    {
     nome : "Dean",
     valor: 1,
-},
-{
-    nome : "Jhon",
-    valor: 50,
-}
-,{
-    nome: "Sammy",
-    valor : 60,
+    },
+    {
+        nome : "Jhon",
+        valor: 50,
+    }
+    ,{
+        nome: "Sammy",
+        valor : 60,
 }];
 const lista2 = [
     {
@@ -26,15 +27,15 @@ const lista2 = [
     {
     nome : "BarLix",
     valor : 14,
-},
-{
-    nome : "Marshal",
-    valor : 75,
-},
-{
-    nome : "Lilian",
-    valor : 80,
-}
+    },
+    {
+        nome : "Marshal",
+        valor : 75,
+    },
+    {
+        nome : "Lilian",
+        valor : 80,
+    }
 ];
 let listaNova = [], contadorLista1 = 0, contadorLista2 = 0;
 for(let contVez ;contadorLista1 < lista1.length && contadorLista2 < lista2.length; contVez++){
@@ -55,13 +56,11 @@ for(let contVez ;contadorLista1 < lista1.length && contadorLista2 < lista2.lengt
     }
    
 };
-while(contadorLista1 < lista1.length){
+for(contadorLista1; contadorLista1 < lista1.length; contadorLista1++){
     listaNova.push(lista1[contadorLista1]);
-    contadorLista1++;
 };
-while(contadorLista2 < lista2.length){
+for(contadorLista2 ;contadorLista2 < lista2.length; contadorLista2++){
     listaNova.push(lista2[contadorLista2]);
-    contadorLista2++;
 }
 
 console.log(listaNova);
