@@ -16,27 +16,30 @@ const lista2 = [
         valor : 1,
     },
     {
-        nome : "Barney",
+        nome : "BarnacOU",
         valor : 2,
     },
     {
-        nome : "Barney",
+        nome : "BarT",
         valor : 10,
     },
     {
-    nome : "Barney",
+    nome : "BarLix",
     valor : 14,
 },
 {
     nome : "Marshal",
-    valor : 15,
+    valor : 75,
 },
 {
     nome : "Lilian",
-    valor : 70,
+    valor : 80,
 }
 ];
-for(let contadorLista1 = 0, contadorLista2 = 0, listaNova = [], contVez ;contadorLista1 < lista1.length && contadorLista2 < lista2.length; contVez++){
+let listaNova = [], contadorLista1 = 0, contadorLista2 = 0;
+for(let contVez ;contadorLista1 < lista1.length && contadorLista2 < lista2.length; contVez++){
+    
+    console.log(`comparando o ${contadorLista1} com o ${contadorLista2}`);
     if(lista1[contadorLista1].valor < lista2[contadorLista2].valor){
         listaNova.push(lista1[contadorLista1]);
         contadorLista1++;
@@ -50,6 +53,15 @@ for(let contadorLista1 = 0, contadorLista2 = 0, listaNova = [], contVez ;contado
         contadorLista1++;
         contadorLista2++;
     }
-    console.log("aaaaaaaaaaaaaaaaaaaaa")
-    console.log(listaNova)
+   
+};
+while(contadorLista1 < lista1.length){
+    listaNova.push(lista1[contadorLista1]);
+    contadorLista1++;
+};
+while(contadorLista2 < lista2.length){
+    listaNova.push(lista2[contadorLista2]);
+    contadorLista2++;
 }
+
+console.log(listaNova);
