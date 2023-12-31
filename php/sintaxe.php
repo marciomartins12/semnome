@@ -1,16 +1,30 @@
 <?php
 
 
+$pe1 = ["nome"=> "teste nome", "valor" => 1213];
+$pe2 = ["nome"=> "nome 2", "valor" => 0213];
+$pe3 = ["nome"=> "mn3", "valor" => 12134];
 
 
 
-$listaPessoas = [
-    'nome' => "Márcio José Martins Câmara",
-    'salario' => 123423.92,
-    'idade' => 21
-];
+$lista = [$pe1, $pe2, $pe3];
 
-echo "Info: nome:".$listaPessoas['nome']." idade:".$listaPessoas['idade']." salario:".$listaPessoas['salario'].".";
+foreach($lista as $chave=>$item){
+    echo "posicao[".$chave."] => nome:".$item["nome"]."valor:".$item["valor"].".\n";
+};
+
+
+
+
+
+
+// $listaPessoas = [
+//     'nome' => "Márcio José Martins Câmara",
+//     'salario' => 123423.92,
+//     'idade' => 21
+// ];
+
+// echo "Info: nome:".$listaPessoas['nome']." idade:".$listaPessoas['idade']." salario:".$listaPessoas['salario'].".";
 
 
 
