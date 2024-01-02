@@ -7,3 +7,8 @@ function olamundo(){
 function deixarMaiusculo($txt){
     return strtoupper($txt);
 };
+
+
+function valor(&$valor){
+$valor+=10;
+};
