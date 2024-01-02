@@ -1,3 +1,4 @@
 <?php
-require("tst.php");
-include("tst3.php");
+require("funcoes.php");
+
+echo deixarMaiusculo(olamundo());
