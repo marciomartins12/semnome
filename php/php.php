@@ -6,12 +6,14 @@ class Conta{
     private $nome;
     private $cpf;
     private $saldo;
+    private static $numerodecontas;
 
     function __construct(string $nome, string $cpf){
         $this->nome = $nome;
         $this->cpf = $cpf;
         $this->saldo = 0;
         $this->validador($nome, $cpf);
+        self::$numerodecontas++;
     }
     
     private function validador($nome, $cpf){
@@ -19,6 +21,9 @@ class Conta{
             echo "invalido cpf ou nome";
             exit();
         }
+    }
+    public function exibenumerodecontas(){
+        return self::$numerodecontas;
     }
     public function adicionarSaldo(float $valor):void{
         if($valor > 0){
@@ -33,9 +38,12 @@ class Conta{
 };
 
 $conta = new conta("Márcio José Martins Câmara", "123.123.123.12");
+$conta = new conta("Márcio José Martins Câmara", "123.123.123.12");
+$conta = new conta("Márcio José Martins Câmara", "123.123.123.12");
 
 $conta->adicionarSaldo(250);
 
 
+echo "numero de contas <- ".$conta->exibenumerodecontas(). "\n";
 
 var_dump($conta);
