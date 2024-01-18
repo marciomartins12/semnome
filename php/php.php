@@ -2,21 +2,31 @@
 
 
 class Conta{
-    public $nome;
-    public $saldo;
+    
+    private $nome;
+    private $cpf;
+    private $saldo;
 
-    public function adicionarSaldo(float $valor){
+    function __construct(string $nome, string $cpf){
+        $this->nome = $nome;
+        $this->cpf = $cpf;
+        $this->saldo = 0;
+    }
+    
+
+    public function adicionarSaldo(float $valor):void{
         if($valor > 0){
             $this->saldo = $valor;
+            return;
         }
+        echo "valor precisa ser positivo";
     }
-    public function adicionarNome(string $valor){
+    public function adicionarNome(string $valor):void{
         $this->nome = $valor; 
     }
 };
 
-$conta = new conta();
+$conta = new conta("marcio jose", "123.321.231-23");
 
 $conta->adicionarSaldo(250);
-$conta->adicionarNome("Márcio José Martins Câmara");
 var_dump($conta);
