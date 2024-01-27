@@ -1,6 +1,6 @@
 <?php
 
-class Empregado{
+class Empregado extends Pessoa{
     private string $trabalho;
 
     public function __construct($trabalho){
