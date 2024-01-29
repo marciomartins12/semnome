@@ -1,7 +1,13 @@
 <?php
-require_once "verifica.php";
+ spl_autoload_register(function($nomeClass){
+    $resultado = str_replace("test\\", "", $nomeClass);
+    $resultado .= ".php";
+    echo "\n" . $resultado;
+    
+    require_once strtolower($resultado);
+});
 class Titular{
-    use PHP\test\Verifica;
+    use test\Verifica;
 
     private string $nome;
     private int $idade;
@@ -9,9 +15,8 @@ class Titular{
         $this->nome = $nome;
         $this->idade = $idade;
     }
-    public function __autoload($nomeClass){
-        echo $nomeClass;
-    }
+    
+   
     public function __tostring():string{
         return  "meu nome é {$this->nome}, tenho {$this->idade}.";
     }
@@ -19,6 +24,6 @@ class Titular{
 
 }
 
-$novo = new Titular("marcio", 21);
+$novo = new Titular("marcio", 10);
 echo $novo;
-$novo->verificaidade();
+echo $novo->verificaidade()? "Adulto":"MnIdade";
