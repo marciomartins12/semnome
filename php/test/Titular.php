@@ -1,7 +1,8 @@
 <?php
-use PHP\test;
-
+require_once "verifica.php";
 class Titular{
+    use PHP\test\Verifica;
+
     private string $nome;
     private int $idade;
     public function __construct(string $nome, string $idade){
@@ -20,3 +21,4 @@ class Titular{
 
 $novo = new Titular("marcio", 21);
 echo $novo;
+$novo->verificaidade();
