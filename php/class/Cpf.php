@@ -1,5 +1,5 @@
 <?php
-namespace Semnome\php\class\Cpf;
+namespace class;
 class Cpf{
     private string $cpf;
 

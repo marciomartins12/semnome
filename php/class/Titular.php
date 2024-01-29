@@ -1,14 +1,15 @@
 <?php 
-namespace Semnome\php\class\Titular;
-use Semnome\php\class\Pessoa;
-
+namespace class;
+use class\Pessoa;
+use class\Cpf;
 spl_autoload_register(function($nome){
-    $resultado = str_replace("Semnome\php\class\\","", $nome);
+    $resultado = str_replace("class\\","", $nome);
     $resultado = str_replace("\\",DIRECTORY_SEPARATOR, $resultado);
     $resultado .=".php";
     if(file_exists($resultado)){
-        echo $resultado;
-        return require_once $resultado;
+        echo $resultado ."\n";
+        require_once $resultado;
+        
     }
 });
 class Titular extends Pessoa{
