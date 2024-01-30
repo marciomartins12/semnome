@@ -1,7 +1,7 @@
 <?php 
-$arquivo = fopen("texto.txt", "r");
+$arquivo = fopen("teste.json", "r");
 
-$comprimentoDoArquivo = filesize("texto.txt");
+$comprimentoDoArquivo = filesize("teste.json");
 
 $resultado = fread($arquivo, $comprimentoDoArquivo);
 
