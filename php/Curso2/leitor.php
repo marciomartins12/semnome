@@ -1,5 +1,8 @@
 <?php 
 $arquivo = fopen("teste.json", "r");
+$teste = fopen("aaaa.txt", "a");
+
+fwrite($teste, "aaaaaaaa");
 
 $comprimentoDoArquivo = filesize("teste.json");
 
