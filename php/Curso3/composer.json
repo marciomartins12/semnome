@@ -12,5 +12,7 @@
             "email": "mmarciom1martins635@gmail.com"
         }
     ],
-    "require": {}
+    "require": {
+        "guzzlehttp/guzzle": "^7.0"
+    }
 }
