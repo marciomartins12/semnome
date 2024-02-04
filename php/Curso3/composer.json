@@ -1,0 +1,16 @@
+{
+    "name": "marciomartins12/buscadordecurso",
+    "description": "busca curso na alura",
+    "autoload": {
+        "psr-4": {
+            "Marciomartins12\\Buscadordecurso\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "marciomartins12",
+            "email": "mmarciom1martins635@gmail.com"
+        }
+    ],
+    "require": {}
+}
