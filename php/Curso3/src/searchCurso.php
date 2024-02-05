@@ -15,7 +15,7 @@ $crawler = new  Crawler();
 $crawler->addHtmlContent($html);
 
 $cursos = $crawler->filter("li.content-courseList-courseName");
-
+var_dump($cursos);
 foreach( $cursos as $curso){
   echo $curso->textContent;
 };
