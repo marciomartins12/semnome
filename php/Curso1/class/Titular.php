@@ -1,7 +1,9 @@
 <?php 
+
 namespace class;
 use class\Pessoa;
 use class\Cpf;
+
 spl_autoload_register(function($nome){
     $resultado = str_replace("class\\","", $nome);
     $resultado = str_replace("\\",DIRECTORY_SEPARATOR, $resultado);

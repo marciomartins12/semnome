@@ -9,3 +9,5 @@ $comprimentoDoArquivo = filesize("teste.json");
 $resultado = fread($arquivo, $comprimentoDoArquivo);
 
 echo $resultado;
+fclose($teste);
+fclose($arquivo);
