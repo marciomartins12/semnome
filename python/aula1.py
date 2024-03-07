@@ -39,6 +39,8 @@ def mediaValores(array):
     except:    
         print("erro inesperado")
 
+print(          
+"dona" if "dona" == "com" else "sem")
 #mediaValores(array)
 #inputNumber()
 #somaImpares(array)
