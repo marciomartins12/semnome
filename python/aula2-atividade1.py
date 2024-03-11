@@ -10,6 +10,7 @@ class Carro:
     def getinf(this):
         return print(f"modelo : {this.modelo}\n ano : {this.ano}\n cor : {this.cor}")
     
+   
 teste = Carro("fusca", "2002", "verde")
-
 teste.getinf()
+ 
