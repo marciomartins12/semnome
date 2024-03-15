@@ -1,4 +1,4 @@
-from aula2atividade2 import Livro
+from a.aula2atividade2 import Livro
 
 
 livro1 = Livro("aaaa", "bbbb", "ccc")
