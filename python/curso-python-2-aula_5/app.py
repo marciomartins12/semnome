@@ -1,14 +1,15 @@
 from modelos.restaurante import Restaurante
 from modelos.cardapio import ItemCardapio, Cardapio
 
-restaurante_praca = Restaurante('praça', 'Gourmet')
-restaurante_praca.receber_avaliacao('Gui', 10)
 
 
 def main():
+    restaurante_praca = Restaurante('praça', 'Gourmet')
+    restaurante_praca.receber_avaliacao('Gui', 5)
     suco_de_Frutas = ItemCardapio("suco de amora", 2.50)
-    Restaurante.listar_restaurantes()
-    suco_de_Frutas.exibeCardapio()
+    restaurante_praca.adiciona_bebida(suco_de_Frutas)
+    Restaurante.exibe()
+    
 if __name__ == '__main__':
     main()
 
