@@ -1,4 +1,4 @@
-const lista = require("./js/listaDesordenada");
+const lista = require("./listaDesordenada");
 const newArray = lista;
 
 for(let x = 0; x < newArray.length; x++){

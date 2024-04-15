@@ -1,5 +1,5 @@
 from modelos.avaliacao import Avaliacao
-
+from modelos.cardapio import ItemCardapio
 class Restaurante:
     restaurantes = []
 
@@ -13,12 +13,10 @@ class Restaurante:
     
     def __str__(self):
         return f'{self._nome} | {self._categoria}'
-    @staticmethod
-    def exibe():
-       for resta in Restaurante.restaurantes:
-            print(resta._nome)
-            if resta.cardapio:
-                print(resta.cardapio)
+   
+    def exibe(this) -> None:
+       for i, item in enumerate(this.cardapio, start= 1):
+           print(f"{i} - nome: {item.nome}")
                  
     @classmethod
     def listar_restaurantes(cls):
@@ -46,8 +44,10 @@ class Restaurante:
         quantidade_de_notas = len(self._avaliacao)
         media = round(soma_das_notas / quantidade_de_notas, 1)
         return media
-    def adiciona_prato(self, nome, valor, descricao):
-        self.cardapio.append({"nome" : nome, "valor" : valor,"descricao" :  descricao})
+    def adiciona_prato(self, item):
+         if isinstance(item, ItemCardapio):
+            self.cardapio.append(item)
 
-    def adiciona_bebida(self, nome, valor):
-        self.cardapio.append({"nome" : nome,"valor" : valor})
+    def adiciona_bebida(self, item):
+        if isinstance(item, ItemCardapio):
+            self.cardapio.append(item)
