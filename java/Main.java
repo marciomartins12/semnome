@@ -20,8 +20,14 @@ public class Main {
         System.out.println(donamorte);
         System.out.println(Aluno.getNumeroDeContas());
 
-        int a = 3, b = 9;
+        int a = 1, b = 9;
         double x = (double) a / b;
         System.out.println(x);
+        if (a == 1) {
+            System.out.println("aaaa");
+        }
+
+
+            System.out.println("aiaiaiaiai");
     }
 }
