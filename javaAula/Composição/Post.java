@@ -30,7 +30,7 @@ public class Post {
             "\n\n\nTitulo comentario : " + this.Title +
         "\nConteudo comentario : " + this.Content + 
         "\ndata : " + this.dataHora +
-        "\nLikes : " + this.likes 
+        "\nLikes : " + this.likes + "."
         );
     }
 
