@@ -38,6 +38,7 @@ public class Post {
         for (Comment x: this.listaDeComentarios){
 
             System.err.println(x);
+            
 
         }
     }
