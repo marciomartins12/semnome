@@ -24,3 +24,26 @@ array2 = [1,3,1,2,3,4,4,5,55,23,32]
 array2.sort()
 arraySort = array2
 print(array2)
+
+
+koki = "i"
+
+print("k" in ("l" or koki))
+
+print("koki", "koki")
+print("koki" + "koki")
+
+print("k" == "k")
+
+if "k" in koki:
+    print("aaaaaaaa")
+elif "i" in koki:
+    print("bbbbbbbb")
+
+
+a = 0
+if a:
+    print("valor:",a)
+    print("m'")
+else:
+    print(" sem valor")
