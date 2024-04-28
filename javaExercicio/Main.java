@@ -41,6 +41,10 @@ public static void main(String[] args){
             System.out.println("Data invalida");
         }
 
+
+
+
+
 sc.close();
 }
 }
