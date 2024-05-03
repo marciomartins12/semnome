@@ -17,5 +17,6 @@ public class Main {
         sc.nextLine();
         Product pp1 = new ImportedProduct(name, value, taxa);
             pp1.getInf();
+            sc.close();
     }
 }

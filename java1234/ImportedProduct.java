@@ -7,6 +7,6 @@ public class ImportedProduct extends Product {
     }
     @Override
     public double getPrice(){
-        return super.getPrice() * customFree;
+        return super.getPrice() + customFree;
     }
 }
