@@ -16,6 +16,7 @@ public class Main{
         }
         catch(Error e){
             System.out.println("erro erro");
+            
         }
     }
 }
