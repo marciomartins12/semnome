@@ -10,8 +10,14 @@ public static void main(String[] args) {
 
     Scanner sc = null;
     
+   
+    
+
+
     try{
         sc = new Scanner(fle);
+        int si  = 4;
+        {(si == 4 ? )System.out.println("okaokaokaoks"); : System.out.println("koki 123 kok")}
 
         while(sc.hasNextLine()){
             System.out.println(sc.nextLine());
